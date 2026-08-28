@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi/Satoshi-Variable.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi/Satoshi-VariableItalic.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/outfit/Outfit-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-satoshi: "Satoshi", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  /* Desktop side margin, switched on aspect ratio: 160px on 16:9 (and wider);
+     108px on 16:10 and squarer/taller ratios — see the media query below. */
+  --spacing-page-margin: 160px;
+  --spacing-gutter: 1rem;
+
+  --color-white: #f8fafb;
+  --color-black: #111827;
+  --color-primary: #1e897b;
+  --color-grey-light: #e8edef;
+  --color-grey-dark: #485363;
+  --color-grey-mid: #8793a6;
+  --color-grey-border: #dfe6ea;
+}
+
+/* 16:10 and squarer (aspect ratio <= 1.6): most 16:10 laptops. 16:9 (1.78)
+   and ultrawide keep the 160px above. */
+@media (max-aspect-ratio: 8 / 5) {
+  :root {
+    --spacing-page-margin: 76px;
+    /* xl collage: lesson card sits ~100px higher than the 16:9 curve. */
+    --hero-lesson-bottom: clamp(-100px, calc(20vh - 291px), 400px);
+    /* md–xl collage (incl. iPad Pro portrait): lesson card sits lower,
+       bleeding off the bottom edge like the desktop design. */
+    --hero-lesson-bottom-md: clamp(-220px, calc(20vh - 331px), 160px);
+  }
+}
+
+@utility font-outfit {
+  font-family: var(--font-outfit);
+  font-weight: 500;
+}
+
+/* Thin, fully rounded scrollbar: grey-light track, grey-mid handle. */
+@utility custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-grey-mid) var(--color-grey-light);
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-grey-light);
+    border-radius: 9999px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey-mid);
+    border-radius: 9999px;
+  }
+}
