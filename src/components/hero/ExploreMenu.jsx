@@ -75,7 +75,7 @@ function ExploreMenu() {
                       type="button"
                       onMouseEnter={() => setActiveCourse(course)}
                       onFocus={() => setActiveCourse(course)}
-                      className={`flex w-full items-center justify-between gap-3 rounded-md px-3 py-2.5 text-left font-satoshi text-sm transition hover:bg-gray-100 ${
+                      className={`flex w-full items-center justify-between gap-3 font-medium rounded-md px-3 py-2.5 text-left font-satoshi text-sm transition hover:bg-gray-100 ${
                         activeCourse?.title === course.title
                           ? "bg-gray-100 text-primary"
                           : "text-grey-dark"
@@ -97,7 +97,7 @@ function ExploreMenu() {
                     <li key={mod}>
                       <a
                         href="#"
-                        className="block rounded-md px-3 py-2.5 font-satoshi text-sm text-grey-dark transition hover:bg-gray-100"
+                        className="block font-medium rounded-md px-3 py-2.5 font-satoshi text-sm text-grey-dark transition hover:bg-gray-100"
                       >
                         {mod}
                       </a>
