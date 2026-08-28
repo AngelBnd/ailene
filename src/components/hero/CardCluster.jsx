@@ -38,7 +38,7 @@ function CardCluster({ className = "" }) {
           <div className="relative w-full h-full  ">
             <DoodleLabel
               arrow={pointToRight}
-              className="absolute z-50 left-[21.5%] bottom-[64%] w-[6.9%] text-right text-xl"
+              className="absolute z-50 left-[21.5%] bottom-[67%] w-[6.9%] text-right text-xl"
             >
               Langsung praktek!
             </DoodleLabel>
@@ -95,7 +95,7 @@ function CardCluster({ className = "" }) {
           <div className="relative w-full h-full">
             <DoodleLabel
               arrow={pointToRight}
-              className="absolute z-10 left-[15%] bottom-[60%] w-[8.4%] text-right text-xl"
+              className="absolute z-10 left-[15%] bottom-[62%] w-[8.4%] text-right text-xl"
             >
               Langsung praktek!
             </DoodleLabel>
