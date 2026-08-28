@@ -2,6 +2,8 @@ import LessonBrowserCard from "./LessonBrowserCard";
 import PromptingExerciseCard from "./PromptingExerciseCard";
 import CheckpointQuizCard from "./CheckpointQuizCard";
 import DoodleLabel from "./DoodleLabel";
+import pointToRight from "../../assets/strokes/PointToRight.svg";
+import pointToLeft from "../../assets/strokes/PointToLeft.svg";
 
 /**
  * The three overlapping "boxes" below the hero copy.
@@ -35,14 +37,14 @@ function CardCluster({ className = "" }) {
         >
           <div className="relative w-full h-full  ">
             <DoodleLabel
-              arrow="/src/assets/strokes/PointToRight.svg"
+              arrow={pointToRight}
               className="absolute z-50 left-[21.5%] bottom-[64%] w-[6.9%] text-right text-xl"
             >
               Langsung praktek!
             </DoodleLabel>
 
             <DoodleLabel
-              arrow="/src/assets/strokes/PointToLeft.svg"
+              arrow={pointToLeft}
               className="absolute z-50  right-[21.2%] bottom-[68%] w-[6%] text-xl"
               under
             >
@@ -92,14 +94,14 @@ function CardCluster({ className = "" }) {
         <div className="absolute inset-0">
           <div className="relative w-full h-full">
             <DoodleLabel
-              arrow="/src/assets/strokes/PointToRight.svg"
+              arrow={pointToRight}
               className="absolute z-10 left-[15%] bottom-[60%] w-[8.4%] text-right text-xl"
             >
               Langsung praktek!
             </DoodleLabel>
 
             <DoodleLabel
-              arrow="/src/assets/strokes/PointToLeft.svg"
+              arrow={pointToLeft}
               className="absolute z-10 right-[15%]  bottom-[70%] w-[7.4%] text-xl"
               under
             >
@@ -165,7 +167,7 @@ function CardCluster({ className = "" }) {
 
         {/* Doodle: top-right, points down at the cards */}
         <DoodleLabel
-          arrow="/src/assets/strokes/PointToLeft.svg"
+          arrow={pointToLeft}
           className="absolute right-[10%] bottom-[62%] z-40 w-[18%] text-[3.9cqw]"
           under
         >
@@ -174,7 +176,7 @@ function CardCluster({ className = "" }) {
 
         {/* Doodle: bottom-left, positive bottom, points right at the cards */}
         {/* <DoodleLabel
-          arrow="/src/assets/strokes/PointToRight.svg"
+          arrow={pointToRight}
           className="absolute left-[4%] bottom-[64%] z-40  w-[20%] text-[4cqw] text-right "
         >
           Langsung praktek!

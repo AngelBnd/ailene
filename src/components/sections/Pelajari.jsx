@@ -4,6 +4,9 @@ import { SparkleIcon, RepeatIcon, CpuIcon } from "./LevelIcons";
 import pelajariArrow from "../../assets/strokes/PelajariArrow.svg";
 import { Underline } from "../global/Stroke";
 import PelajariStroke from "../../assets/strokes/PelajariStroke.svg";
+import repetitifImg from "../../assets/strokes/Repetitif.svg";
+import workflowImg from "../../assets/strokes/Workflow.svg";
+import agentImg from "../../assets/strokes/Agent.svg";
 
 /**
  * "Pelajari" section — three level cards (Pemula / Menengah / Mahir).
@@ -18,7 +21,7 @@ const LEVELS = [
     title: "Pangkas kerjaan repetitif",
     description:
       "Rangkum dokumen, bikin draft, rapiin  data— kerjaan yang biasa makan berjam-jam, kini selesai dalam hitungan menit",
-    image: "/src/assets/strokes/Repetitif.svg",
+    image: repetitifImg,
   },
   {
     level: "Menengah",
@@ -26,7 +29,7 @@ const LEVELS = [
     title: "Workflow jalan sendiri",
     description:
       "Rangkai beberapa langkah jadi satu alur: AI yang menyiapkan, menyusun, dan meneruskan tanpa kamu ulang dari awal",
-    image: "/src/assets/strokes/Workflow.svg",
+    image: workflowImg,
   },
   {
     level: "Mahir",
@@ -34,7 +37,7 @@ const LEVELS = [
     title: "Bangun tools AI sendiri",
     description:
       "Gabungkan model, data, dan logika kamu jadi asisten khusus yang paham konteks tim dan cara kerjamu",
-    image: "/src/assets/strokes/Agent.svg",
+    image: agentImg,
   },
 ];
 

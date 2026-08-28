@@ -1,4 +1,5 @@
 import Grid from "../global/Grid";
+import aileneLogo from "../../assets/AileneLogo.svg";
 
 /**
  * Site footer — logo + tagline + socials on the left, two link columns on the
@@ -77,7 +78,7 @@ function Footer() {
         {/* Left: brand */}
         <div className="col-span-full flex flex-col gap-6 lg:col-span-5">
           <img
-            src="/src/assets/AileneLogo.svg"
+            src={aileneLogo}
             alt="Ailene"
             className="h-7 w-auto self-start brightness-0 invert"
           />
