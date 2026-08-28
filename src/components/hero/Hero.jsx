@@ -43,7 +43,7 @@ function Hero() {
             kamu terapkan dalam pekerjaan.
           </p>
 
-          <div className="col-span-full flex flex-wrap items-center justify-center gap-4 mt-4 z-10">
+          <div className="col-span-full flex flex-wrap items-center justify-center gap-4 mt-4 z-55">
             <Button
               icon={
                 <svg
